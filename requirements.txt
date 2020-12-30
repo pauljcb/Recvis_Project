@@ -3,5 +3,5 @@ scikit-image
 scikit-learn
 scipy
 numpy
-torch
-torchvision
+torch==1.4
+torchvision==0.5
