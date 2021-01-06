@@ -52,6 +52,7 @@ if __name__ == '__main__':
             in_s = imresize(in_s, 1 / opt.scale_factor, opt)
             in_s = in_s[:, :, :reals[n].shape[2], :reals[n].shape[3]]
             out = SinGAN_generate(Gs[n:], Zs[n:], reals, NoiseAmp[n:], opt, in_s, n=n, num_samples=1)
+            out = imresize_to_shape(out, [real.shape[2], real.shape[3]], opt)
             out = (1-mask)*real+mask*out
             plt.imsave('%s/start_scale=%d.png' % (dir2save,opt.harmonization_start_scale), functions.convert_image_np(out.detach()), vmin=0, vmax=1)
 
