@@ -1,0 +1,2 @@
+    parser.add_argument('--min_size',type=int,help='image minimal size at the coarser scale',default=16)
+    parser.add_argument('--max_size', type=int,help='image minimal size at the coarser scale', default=1024)
