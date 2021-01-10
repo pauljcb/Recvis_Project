@@ -1,2 +1,1 @@
-    parser.add_argument('--min_size',type=int,help='image minimal size at the coarser scale',default=16)
-    parser.add_argument('--max_size', type=int,help='image minimal size at the coarser scale', default=1024)
+!python random_samples.py --input_name 'mario.png' --mode random_samples --min_size 16 --max_size 1616 --scale_factor 0.70

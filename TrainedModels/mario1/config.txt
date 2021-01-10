@@ -1,0 +1,1 @@
+!python random_samples.py --input_name 'mario.png' --mode random_samples --min_size 26 --max_size 3232--scale_factor 0.70
